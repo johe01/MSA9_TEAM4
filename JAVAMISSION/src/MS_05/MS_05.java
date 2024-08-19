@@ -15,20 +15,20 @@ public class MS_05 {
 			System.out.println("0.\t종료");
 			System.out.print("********** 번호 : ");
 			Scanner sc = new Scanner(System.in);
-			n= sc.nextInt();
+			n = sc.nextInt();
 			System.out.println();
-			switch(n) {
+			switch (n) {
 			case 1:
 				System.out.println("'황금올리브 반반한 치킨'이(/가) 주문되었습니다.");
-				sum+=1;
+				sum += 1;
 				break;
 			case 2:
 				System.out.println("'뿌잉클 치킨'이(/가) 주문되었습니다.");
-				sum+=1;
+				sum += 1;
 				break;
 			case 3:
 				System.out.println("'처갓집에서 호식이가 만든 치킨'이(/가) 주문되었습니다.");
-				sum+=1;
+				sum += 1;
 				break;
 			case 0:
 				System.out.printf("총 %d 개의 상품이 주문되었습니다.", sum);
@@ -39,6 +39,6 @@ public class MS_05 {
 				break;
 			}
 			System.out.println("\n");
-		}while(n!=0);
+		} while (n != 0);
 	}
 }
