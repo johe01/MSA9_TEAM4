@@ -13,7 +13,7 @@ public class MS_05 {
 			System.out.println("2.\t뿌잉클 치킨");
 			System.out.println("3.\t처갓집에서 호식이가 만든 치킨");
 			System.out.println("0.\t종료");
-			System.out.print("********** 번호 : ");
+			System.out.print("********** 번호: ");
 			Scanner sc = new Scanner(System.in);
 			n = sc.nextInt();
 			System.out.println();
