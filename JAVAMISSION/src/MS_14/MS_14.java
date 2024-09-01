@@ -3,6 +3,7 @@ package MS_14;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 class Person {
@@ -49,7 +50,7 @@ class Person {
 	}
 		
 }
-
+// 성적 순으로 내림차순 , 번호 순으로 오름차순 정렬하여 출력하시오
 public class MS_14 {
 
 	public static void main(String[] args) {
@@ -77,9 +78,13 @@ public class MS_14 {
 				personList.add(new Person(aNo,aName,aScore,aSubject));
 			}
 			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		personList.stream()
+				  .sorted(Comparator.comparing(Person::getNo))
+				  .sorted(Comparator.comparing(Person::getScore).reversed())
+				  .forEach(p -> System.out.println(p));
+		
 	}
 }
