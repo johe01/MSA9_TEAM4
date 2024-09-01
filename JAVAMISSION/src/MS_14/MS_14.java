@@ -50,7 +50,7 @@ class Person {
 	}
 		
 }
-// 성적 순으로 내림차순 , 번호 순으로 오름차순 정렬하여 출력하시오
+
 public class MS_14 {
 
 	public static void main(String[] args) {
@@ -60,15 +60,10 @@ public class MS_14 {
 		
 		
 		try (
-				// FileReader 객체를 사용하여 파일을 문자 단위로 입력
-				FileReader fr = new FileReader(filePath);
-				
-				// BufferedReader 객체로 파일 데이터 입력 성능 향상
+				FileReader fr = new FileReader(filePath);				
 				BufferedReader br = new BufferedReader(fr);
 		){
 			String text;
-			// readLine() : 파일의 문자 데이터를 한 줄씩 입력
-			//				데이터가 더이상 없으며 null 반환
 			while( (text = br.readLine()) != null) {
 				String[] student=text.split("/");
 				int aNo =Integer.parseInt(student[0]);
