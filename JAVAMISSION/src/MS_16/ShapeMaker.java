@@ -20,19 +20,19 @@ public class ShapeMaker {
 			double y = sc.nextDouble();
 			shapeList.add(new Triangle(x,y));
 			break;
-		case "2":
-			System.out.print("가로 길이: ");
-			double x = sc.nextDouble();
-			System.out.print("세로 길이: ");
-			double y = sc.nextDouble();
-			shapeList.add(new Rectangle(x,y));
-			break;
-		case "3":
-			System.out.print("반지름 길이: ");
-			double x = sc.nextDouble();
-			shapeList.add(new Circle(x));
-			break;
-		
+//		case "2":
+//			System.out.print("가로 길이: ");
+//			double x = sc.nextDouble();
+//			System.out.print("세로 길이: ");
+//			double y = sc.nextDouble();
+//			shapeList.add(new Rectangle(x,y));
+//			break;
+//		case "3":
+//			System.out.print("반지름 길이: ");
+//			double x = sc.nextDouble();
+//			shapeList.add(new Circle(x));
+//			break;
+//		
 
 		default:
 			break;
