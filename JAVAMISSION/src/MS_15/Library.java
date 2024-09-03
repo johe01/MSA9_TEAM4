@@ -3,16 +3,16 @@ package MS_15;
 import java.util.ArrayList;
 
 class Book{
-	int isbn;
+	String isbn;
 	String title;
 	String writer;
 	String content;
 	int price;
 	public Book() {
-		
+		this("000000", "제목없음", "작가미상","내용없음",0);
 	}
 	
-	public Book(int isbn, String title, String writer, String content, int price) {
+	public Book(String isbn, String title, String writer, String content, int price) {
 		this.isbn = isbn;
 		this.title = title;
 		this.writer = writer;
@@ -20,11 +20,11 @@ class Book{
 		this.price = price;
 	}
 
-	public int getIsbn() {
+	public String getIsbn() {
 		return isbn;
 	}
 
-	public void setIsbn(int isbn) {
+	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
 
@@ -62,8 +62,8 @@ class Book{
 
 	@Override
 	public String toString() {
-		return "Book [isbn=" + isbn + ", title=" + title + ", writer=" + writer + ", content=" + content + ", price="
-				+ price + "]";
+		return isbn + " | " + title + "\t| " + writer + "\t| " + content + "\t| "
+				+ price;
 	}
 	
 }
@@ -72,8 +72,14 @@ public class Library {
 
 	public static void main(String[] args) {
 		ArrayList<Book> book = new ArrayList<Book>();
-		book.add(new Book(123123, "이게 자바냐", "감자바", "자바 감자바", 33000));
-		book.add(new Book(112112, "정보처리기사", "감자바", "자바 감자바", 33000));
+		book.add(new Book("123123", "이게 자바냐", "감자바", "자바 감자바", 33000));
+		book.add(new Book("112112", "정보처리기사", "김휴먼", "국가기술자격", 45000));
+		book.add(new Book("001001", "실무 DB  ", "박디비", "디비디비딥", 60000));
 		
+		System.out.println("==================== ALOHA 스터디 도서관 ====================");
+		for (Book one : book) {
+			System.out.println(one);
+		}
 	}
+	
 }
