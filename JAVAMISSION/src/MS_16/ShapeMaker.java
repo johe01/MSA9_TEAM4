@@ -10,7 +10,7 @@ public class ShapeMaker {
 		List<Shape> shapeList = new ArrayList<Shape>();
 		Scanner sc = new Scanner(System.in);
 		boolean sw = true;
-		
+		// 입력
 		while(sw) {
 			System.out.println("1. 삼각형, 2. 사각형, 3. 원형");
 			System.out.print("번호를 입력하세요 >> ");
@@ -47,7 +47,7 @@ public class ShapeMaker {
 			}
 		}
 		sc.close();
-		
+		// 출력
 		double areaSum = 0.0;
 		double roundSum = 0.0;
 		

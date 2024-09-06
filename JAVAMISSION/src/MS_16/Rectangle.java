@@ -1,5 +1,5 @@
 package MS_16;
-
+// Rectangle
 public class Rectangle extends Shape{
 
 	double width, height;

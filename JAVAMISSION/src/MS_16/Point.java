@@ -1,5 +1,5 @@
 package MS_16;
-
+// Point
 public class Point {
 
 	int x, y;

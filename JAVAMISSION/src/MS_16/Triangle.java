@@ -1,5 +1,5 @@
 package MS_16;
-
+// Triangle
 public class Triangle extends Shape {
 
 	double width, height;

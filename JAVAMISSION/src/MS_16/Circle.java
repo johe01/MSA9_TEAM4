@@ -1,5 +1,5 @@
 package MS_16;
-
+//Circle
 public class Circle extends Shape {
 
 	double radius;

@@ -1,5 +1,5 @@
 package MS_16;
-
+// Shape
 public abstract class Shape {
 
 	Point point;
